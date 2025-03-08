@@ -1,0 +1,9 @@
+{
+    "name": "@temp-server-creator/lib",
+    "private": true,
+    "version": "0.0.1",
+    "main": "./src/index.ts",
+    "dependencies": {
+        "discord.js": "14.18.0"
+    }
+}

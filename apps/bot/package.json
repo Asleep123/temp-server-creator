@@ -1,0 +1,16 @@
+{
+	"name": "bot",
+	"private": true,
+	"type": "module",
+	"main": "./src/index.ts",
+	"dependencies": {
+		"discord.js": "14.18.0",
+		"@temp-server-creator/database": "workspace:*",
+		"@temp-server-creator/config": "workspace:*",
+		"@temp-server-creator/logger": "workspace:*",
+		"@temp-server-creator/lib": "workspace:*"
+	},
+	"scripts": {
+		"dev": "NODE_ENV=development bun --watch ."
+	}
+}
