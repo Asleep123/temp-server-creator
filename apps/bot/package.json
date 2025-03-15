@@ -11,6 +11,7 @@
 		"@temp-server-creator/lib": "workspace:*"
 	},
 	"scripts": {
-		"dev": "NODE_ENV=development bun --watch ."
+		"dev": "NODE_ENV=development bun --watch .",
+		"start": "NODE_ENV=production bun run --trace-warnings ."
 	}
 }

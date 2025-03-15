@@ -10,8 +10,9 @@ generator client {
 
 model Guild {
     id String @id @unique
-    botId String
+    botId String?
     deleted Boolean @default(false)
     deletedOn DateTime?
     createdAt DateTime @default(now())
+    panelId String
 }

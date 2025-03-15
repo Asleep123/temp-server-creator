@@ -4,8 +4,10 @@
 	"workspaces": ["apps/**", "packages/**"],
 	"scripts": {
 		"format": "biome format --write",
+		"dev": "bun --env-file=.env run dev:bot",
 		"start": "bun --env-file=.env run start:bot",
-		"start:bot": "bun --env-file=.env run --elide-lines 0 --filter bot dev",
+		"dev:bot": "bun --env-file=.env run --elide-lines 0 --filter bot dev",
+		"start:bot": "bun --env-file=.env run --elide-lines 0 --filter bot start",
 		"db:generate": "bunx prisma generate",
 		"db:push": "bunx prisma db push"
 	},
