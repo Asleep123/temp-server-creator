@@ -1,3 +1,5 @@
+# WIP, NOT ready for deployments yet, this README will get an update soon
+
 # temp-server-creator
 
 To install dependencies:
