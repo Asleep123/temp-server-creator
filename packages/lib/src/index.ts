@@ -1,3 +1,5 @@
 export * from "./classes/Bot"
 export * from "./classes/CustomClient"
 export * from "./classes/Command"
+export * from "./classes/Button"
+export * from "./classes/SelectMenu"

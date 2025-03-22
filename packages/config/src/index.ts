@@ -12,14 +12,15 @@ export const intents = [
 export const defaultAvatarUrl = "https://cdn.discordapp.com/embed/avatars/0.png"
 
 export enum colors {
-    ERROR = "#ed4337",
+	ERROR = "#ed4337",
 	SUCCESS = "#5cb85c"
 }
 
 export const config = {
 	intents,
 	ownerId,
-    defaultAvatarUrl, colors
+	defaultAvatarUrl,
+	colors
 }
 
 export * from "./env"

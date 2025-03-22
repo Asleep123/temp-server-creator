@@ -1,3 +1,3 @@
 export * from "./logger"
 export * from "./BotError"
-export * from "./CommandError"
+export * from "./InteractionError"

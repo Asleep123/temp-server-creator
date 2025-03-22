@@ -22,7 +22,12 @@ export default async function onMessageCreate(message: Message) {
 			`Eval attempted by ${message.author.username} (${message.author.id}) in ${message.guild!.name} (${message.guild!.id}) in ${message.channel.name} (${message.channel.id}): ${toEval}`
 		)
 		if (message.author.id === ownerId) {
-			const evalClass = new Eval(toEval, message.client as lib.CustomClient, dev, message)
+			const evalClass = new Eval(
+				toEval,
+				message.client as lib.CustomClient,
+				dev,
+				message
+			)
 			const result = await evalClass.execute()
 			if (result.resultFiltered && result.resultFiltered.length > 2000) {
 				return await message.reply({

@@ -9,7 +9,8 @@
 		"dev:bot": "bun --env-file=.env run --elide-lines 0 --filter bot dev",
 		"start:bot": "bun --env-file=.env run --elide-lines 0 --filter bot start",
 		"db:generate": "bunx prisma generate",
-		"db:push": "bunx prisma db push"
+		"db:push": "bunx prisma db push",
+		"db:ui": "bunx prisma studio"
 	},
 	"prisma": {
 		"schema": "./packages/database/prisma"
